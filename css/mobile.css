@@ -1,0 +1,35 @@
+#header-container {
+  margin: 3rem 1.2rem;
+}
+
+#header-container .delivery {
+  font-size: 1.75rem;
+}
+
+#header-container .technology {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+#header-container p {
+  font-size: 1.15rem;
+  margin-bottom: 3rem;
+}
+#header-container br {
+  display: none;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1.2rem;
+}
+
+.card {
+  width: 340px;
+  margin-bottom: 1.5rem;
+}
+
+.card br {
+  display: none;
+}

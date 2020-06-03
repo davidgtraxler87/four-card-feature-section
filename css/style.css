@@ -1,0 +1,141 @@
+:root {
+  --red: #ea5353;
+  --cyan: #45d3d3;
+  --orange: #fcaf4a;
+  --blue: #549ef2;
+  --darkBlue: #4c4e61;
+  --grayBlue: #a3a5ae;
+  --vlightGray: #fafafa;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* width: 1440px; */
+  font-family: "Poppins", sans-serif;
+  background: var(--vlightGray);
+}
+
+#header-container {
+  text-align: center;
+  align-self: center;
+  margin: 3rem 0;
+  line-height: 1.4;
+}
+
+#header-container .delivery {
+  font-size: 2rem;
+  font-weight: 200;
+  color: var(--darkBlue);
+}
+
+#header-container .technology {
+  color: var(--darkBlue);
+}
+
+#header-container p {
+  color: var(--grayBlue);
+}
+#card-section {
+  width: 1440px;
+}
+.grid-container {
+  display: grid;
+  margin: 0 16rem 0 16rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    ". builder ."
+    "supe builder calc"
+    "supe karma calc"
+    ". karma .";
+  grid-gap: 1.5rem;
+}
+
+.card {
+  width: 400px;
+  height: auto;
+  background: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.2); /*0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+}
+
+.card .line-style {
+  display: block;
+  position: relative;
+  top: 0;
+  height: 5px;
+  width: auto;
+  margin: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card .card-info {
+  padding-left: 2.3rem;
+  padding-top: 2.3rem;
+  color: var(--darkBlue);
+}
+
+.card .card-info h1 {
+  margin-bottom: 1rem;
+}
+
+.card .card-info p {
+  line-height: 1.5;
+  color: var(--grayBlue);
+  margin-bottom: 1.5rem;
+}
+
+.card .card-icon {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2.3rem;
+  padding-bottom: 2.3rem;
+}
+
+.grid-container .supe-color {
+  background: var(--cyan);
+}
+.grid-container .builder-color {
+  background: var(--red);
+}
+.grid-container .karma-color {
+  background: var(--orange);
+}
+.grid-container .calc-color {
+  background: var(--blue);
+}
+
+.supe-card {
+  grid-area: supe;
+  grid-column-start: 1;
+}
+
+.builder-card {
+  grid-area: builder;
+}
+
+.karma-card {
+  grid-area: karma;
+}
+
+.calc-card {
+  grid-area: calc;
+}
+
+.attribution {
+  font-size: 0.75rem;
+  text-align: center;
+  margin: 2rem;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: #ff7f50;
+}
